@@ -1,0 +1,156 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+.aside{
+    background-color: v.$grey-normal;
+    width: 100%;
+}
+
+.titulo-aside{
+    font-weight: bold;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.produc-no-selectec{
+    margin: 0 auto;
+    p{
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+.productos-select-aside{
+    align-items: center;
+    background-color: v.$blanco;
+    border: 1px solid v.$red;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 90%;
+    padding: 1rem 0;
+}
+
+.contenedor-productos-aside{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+    width: 100%;
+    button{
+        background-color: transparent;
+        border: none;
+        color: v.$red;
+        cursor: pointer;
+        font-size: 2rem;
+
+        img{
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+}
+
+.aside-titulos-productos{
+    h4{
+        color: v.$red;
+        margin: 0;
+    }
+    p{
+        color: v.$red;
+    }
+}
+
+
+.productos-sugeridos{
+    margin: 5rem 0;
+    overflow-y: auto;
+    height: 55rem;
+    .titulo-productos-sugeridos{
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+
+.sugerido-contenedor-lista{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+    width: 100%;
+}
+.sugerido-container{
+    align-items: center;
+    background-color: v.$blanco;
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+    width: 100%;
+
+    h2{
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 4rem;
+        font-weight: 400;
+        margin-right: 3rem;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            color: rgb(50, 202, 50);
+            transform: scale(1.2);
+        }
+    }
+
+    &:hover{
+        transform: scale(.9);
+    }
+}
+
+.suegrido-titulos{
+    h4{
+        margin:.5rem 0;
+    }
+}
+
+.produc-no-sugerido{
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.listado-aside{
+    display: none;
+    @include m.desktop{
+        display: block;
+    }
+}
+
+.ver-productos{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    p{
+        font-size: 2rem;
+    }
+
+    img{
+        cursor: pointer;
+        height: 1rem;
+        margin-left: 2rem;
+        width: 1rem;
+    }
+
+    @include m.desktop{
+        display: none;
+    }
+}
+
+.showlist{
+    display:block;
+}
+
+.iconoList{
+    display: none;
+}

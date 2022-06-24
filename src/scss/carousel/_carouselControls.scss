@@ -1,0 +1,33 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    display: inline-block;
+    position: absolute;
+    height: 3rem;
+    width: 5rem;
+    top: calc(50% - 25px);
+    color: v.$grey;
+    cursor: pointer;
+
+    @include m.tablet{
+        height: 5rem;
+        width: 7rem;
+    }
+}
+.left {
+left: 0;
+}
+.right {
+right: 0;
+}
+
+.prev-arrow{
+    width: 3rem;
+}
+
+.next-arrow{
+    width: 3rem;
+}

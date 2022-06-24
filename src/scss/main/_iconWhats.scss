@@ -1,0 +1,50 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+.btn-whatsapps{
+    position: fixed;
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    right: 0;
+    top: 50rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    @include m.tablet{
+        top: 45rem;
+    }
+
+    @include m.desktop{
+        top: 40rem;
+    }
+
+    .help-btn-what{
+        background-color: v.$grey-normal;
+        padding: .5rem;
+        display: none;
+    }
+
+    .btn-img-whatsapp{
+        animation: scaleWhatss 2s linear infinite;
+        cursor: pointer;
+    }
+
+    &:hover .help-btn-what{
+        display: block;
+    }
+}
+
+
+@keyframes scaleWhatss{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}

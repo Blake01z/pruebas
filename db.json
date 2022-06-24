@@ -1,0 +1,165 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "src": "https://res.cloudinary.com/blake01z/image/upload/v1654728940/bhrubq28uuqscnbndlvf.jpg",
+      "name": "Banner 1"
+    },
+    {
+      "id": 1,
+      "src": "https://res.cloudinary.com/blake01z/image/upload/v1655940223/g8vakvsp4pljv8zqcu3r.png",
+      "name": "Banner 2"
+    },
+    {
+      "id": 1,
+      "src": "https://res.cloudinary.com/blake01z/image/upload/v1654728940/dy2n1hdtfoosq7aiapyv.jpg",
+      "name": "Banner 3"
+    }
+  ],
+  "users": [
+    {
+      "id": "8c5e46b1-c14a-437b-8774-6fedd1d0b476",
+      "name": "Octavio Flores",
+      "img": "https://imageshack.com/i/pnyrExAOp",
+      "productos": [
+        {
+          "id_producto": 1,
+          "titulo": "Venta de autos nuevos",
+          "subtitulo": "Nissan y Kia",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#F3B335",
+          "src": "https://imageshack.com/i/pmJ6DsqJp"
+        },
+        {
+          "id_producto": 2,
+          "titulo": "Venta o toma de vehículos",
+          "subtitulo": "Multimarca",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#D54E21",
+          "src": "https://imageshack.com/i/poRGOXZEp"
+        },
+        {
+          "id_producto": 3,
+          "titulo": "Autocom Rent",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#CB0035",
+          "src": "https://imageshack.com/i/pm2p9xazp"
+        },
+        {
+          "id_producto": 4,
+          "titulo": "Venta de vehículo aventura",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#A7145B",
+          "src": "https://imageshack.com/i/pnAuwAjkp"
+        },
+        {
+          "id_producto": 5,
+          "titulo": "Toma de vehículo de aventura",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#760060",
+          "src": "https://imageshack.com/i/pn846zy9p"
+        },
+        {
+          "id_producto": 6,
+          "titulo": "Cita de servicio hojalatería y pintura",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#002A7C",
+          "src": "https://imageshack.com/i/pn3SCKJlp"
+        },
+        {
+          "id_producto": 7,
+          "titulo": "Autocom Seguros",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#02A6B8",
+          "src": "https://imageshack.com/i/poaL9dwDp"
+        },
+        {
+          "id_producto": 8,
+          "titulo": "Garantías extendidas",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#00BF7C",
+          "src": "https://imageshack.com/i/pn58nHOGp"
+        },
+        {
+          "id_producto": 9,
+          "titulo": "Autocom Tires",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#9AD859",
+          "src": "https://imageshack.com/i/pmJlBUrep"
+        },
+        {
+          "id_producto": 10,
+          "titulo": "Autocom Finder",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#01714D",
+          "src": "https://imageshack.com/i/poso1Upop"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Tom Smith",
+      "img": "https://imageshack.com/i/plpM5Diaj",
+      "productos": [
+        {
+          "id_producto": 3,
+          "titulo": "Autocom Rent",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#CB0035",
+          "src": "https://imageshack.com/i/pm2p9xazp"
+        },
+        {
+          "id_producto": 1,
+          "titulo": "Venta de autos nuevos",
+          "subtitulo": "Nissan y Kia",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#F3B335",
+          "src": "https://imageshack.com/i/pmJ6DsqJp"
+        },
+        {
+          "id_producto": 2,
+          "titulo": "Venta o toma de vehículos",
+          "subtitulo": "Multimarca",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#D54E21",
+          "src": "https://imageshack.com/i/poRGOXZEp"
+        },
+        {
+          "id_producto": 4,
+          "titulo": "Venta de vehículo aventura",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#A7145B",
+          "src": "https://imageshack.com/i/pnAuwAjkp"
+        },
+        {
+          "id_producto": 6,
+          "titulo": "Cita de servicio hojalatería y pintura",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#002A7C",
+          "src": "https://imageshack.com/i/pn3SCKJlp"
+        },
+        {
+          "id_producto": 5,
+          "titulo": "Toma de vehículo de aventura",
+          "subtitulo": "lorem",
+          "contenido": "Producto recomendado descripcion del producto o tipo de servicio a adquirir",
+          "color": "#760060",
+          "src": "https://imageshack.com/i/pn846zy9p"
+        }
+      ]
+    }
+  ],
+  "registros": [],
+  "encuesta": []
+}

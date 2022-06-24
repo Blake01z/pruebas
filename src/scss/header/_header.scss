@@ -1,0 +1,95 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+header{
+    align-items: center;
+    background-color: v.$dark-grey;
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    padding: 5rem 0;
+
+    @include m.tablet{
+        padding: 2rem 0;
+    }
+
+    img{
+        width: 24rem;
+        margin-left: 3rem;
+    }
+}
+
+.logo-autocom-header{
+    width: 20rem;
+
+    @include m.tablet{
+        width: 25rem;
+    }
+}
+
+.container-header{
+    align-items: center;
+    column-gap: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-right: 5rem;
+}
+
+/* Navegacion Hedaer*/
+.navegacion-header{
+    display: none;
+    
+    @include m.desktop{
+        column-gap: 2rem;
+        display: flex;
+    }
+}
+
+.navegacion-header a{
+    color: v.$light-grey;
+    font-size: 1.6rem;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+/* Alerta de Header */
+
+.header-alert{
+    height: 5rem;
+    position: relative;
+    width: 12rem;
+}
+
+.header-alert-notification{
+    align-items: center;
+    background-color: v.$blanco;
+    border-radius: 8rem;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 4rem;
+
+    @include m.desktop{
+        margin-left: unset;
+    }
+
+    p{
+        color: v.$red;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-right: 3rem;
+    }
+    
+    .bell{
+        color: v.$red;
+        display: block;
+        height: 30px;
+        width: 30px;
+        margin-left: 2rem;
+    }
+}

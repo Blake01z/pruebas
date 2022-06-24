@@ -1,0 +1,31 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+.contenedor-datos-contacto{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    
+    @include m.desktop{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        width: 100%;
+    }
+}
+
+.link-volver{
+    margin-bottom: 5rem;
+}
+
+.btn-contacto-volver{
+    color: v.$red
+}
+
+.text-contato{
+    font-size: 1.4rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.desc-seleccionados{
+    text-align: center;
+}

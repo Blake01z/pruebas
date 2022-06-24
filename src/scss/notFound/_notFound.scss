@@ -1,0 +1,34 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+.container-404{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 0;
+
+    .titulo-404{
+        color: v.$red;
+        font-size: 8rem;
+        text-align: center;
+    }
+
+    p{
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .btn-404{
+        @include m.boton(v.$red,v.$blanco){
+            border-radius: 2rem;
+            display: block;
+        }
+    }
+
+    @include m.tablet{
+        flex-direction: row;
+        margin: 12rem 0;
+    }
+}

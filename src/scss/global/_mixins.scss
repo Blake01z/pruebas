@@ -1,0 +1,87 @@
+@use 'variables' as v;
+
+@mixin telefono {
+    @media (min-width: v.$telefono){
+        @content;
+    }
+}
+
+@mixin  tablet {
+    @media (min-width: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: v.$desktop){
+        @content;
+    }
+}
+
+@mixin grid($columnas,$separacion){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $separacion;
+}
+
+@mixin boton($bgColor, $colorTexto) {
+    background-color: $bgColor;
+    border: none;
+    cursor: pointer;
+    color: $colorTexto;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+    text-align: center;
+    width: 100%;
+    @content;
+
+    &:hover {
+        background-color: darken( $bgColor, 10% );
+    }
+}
+
+@mixin botonColor($color, $colorTexto) {
+    background-color: v.$blanco;
+    border: 2px solid $color;
+    border-radius: 2rem;
+    color: $colorTexto;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 400;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    text-align: center;
+    transition-duration: .3s;
+    transition-property: background-color;
+    width: 70%;
+    @content;
+
+    &:hover {
+        background-color: darken( $color, 10% );
+        color: v.$blanco;
+    }
+}
+
+
+@mixin botonProducto{
+    border: 2px solid;
+    border-radius: 2rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 400;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    text-align: center;
+    transition-duration: .3s;
+    transition-property: background-color;
+    width: 70%;
+    @content;
+}

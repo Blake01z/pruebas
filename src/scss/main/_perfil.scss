@@ -1,0 +1,32 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+.container-info-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+    padding: 3rem;
+    flex-direction: column;
+
+    @include m.desktop{
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+
+    .titulo-lista-productos{
+        font-size: 2.5rem;
+    }
+
+    .nombre-user{
+        text-transform: uppercase;
+        font-size: 1.6rem;
+
+    }
+
+    .img-perfil{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+    }
+}

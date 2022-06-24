@@ -1,0 +1,149 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+footer{
+    background-color: v.$dark-grey;
+    .copyright{
+        color: v.$grey;
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: center;
+
+        @include m.desktop{
+            justify-content: flex-end;
+        }
+    }
+}
+
+.container-footer{
+    display: none;
+    padding: 4rem 0 3rem 0;
+    
+    @include m.desktop{
+        align-items: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    img{
+        width: 30rem;
+    }
+}
+
+.informacion-footer{
+    display: flex;
+    flex-direction: column;
+
+    p{
+        color: v.$grey;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    a{
+        color: v.$grey;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.contacto-footer{
+    p{
+        color: v.$grey;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    a{
+        color: v.$grey;
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.redes-footer{
+    p{
+        color: v.$grey;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    span{
+        color: v.$grey;
+        font-size: 1.4rem;
+    }
+
+    .iconos-footer{
+        display: flex;
+        padding: 1rem;
+    }
+
+    .icono-footer{
+        width: 2.6rem;
+        margin-left: .5rem;
+    }
+
+}
+
+
+
+.container-footer-mobil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+
+    @include m.desktop{
+        display: none;
+    }
+
+    .imagen-logo-footer{
+        width: 30rem;
+    }
+
+    .contacto-footer-mobil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h5{
+            color: v.$blanco;
+            font-size: 1.6rem;
+            margin:1rem 0 0 0;
+        }
+        p,a{
+            color: darken($color: v.$grey, $amount: 20%);
+            margin-top: 1rem;
+        }
+    }
+
+    .redes-footer-mobil{
+        margin-top: 2rem;
+        p{
+            font-size: 2rem;
+            font-weight: bold;
+            color: v.$grey;
+            margin-top: 1rem;
+        }
+
+        span{
+            color: darken($color: v.$grey, $amount: 20%);
+            display: block;
+            font-size: 1.4rem;
+            margin: 1rem 0 4rem 0;
+            text-align: center;
+        }
+        
+        .contenedor-mobil-redes{
+            display: flex;
+            column-gap: 2rem;
+        }
+
+        .iconos-footer-mobil{
+            align-items: center;
+            column-gap: 1rem;
+            display: flex;
+        }
+    }
+}

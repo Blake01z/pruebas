@@ -1,0 +1,95 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+.producto-card{
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 4px rgba($color: #000, $alpha: .25);
+    height: 31.4rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-titulos{
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    overflow: hidden;
+    z-index: 2;
+
+    .titulo-producto{
+        width: 20rem;
+    }
+}
+
+.descripcion-producto{
+    display: none;
+}
+
+.funciones-producto{
+    position: absolute;
+    bottom: 3rem;
+    left: 2rem;
+    z-index: 2;
+}
+
+.btns-producto{
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100%;
+
+    .btn-info-producto{
+        background-color: v.$blanco;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+        width: 15rem;
+
+        @include m.tablet{
+            width: 10rem; 
+        }
+    }
+}
+
+.imgBx{
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    // z-index: -2;
+    
+    .imagen-producto{
+        width: 40rem;
+        position: relative;
+        bottom: 0;
+        top: 0;
+        right: 0;
+    }
+}
+
+.imgBx .share{
+    padding: 1rem;
+    width: 4rem;
+    background-size: auto;
+    border-radius: 50%;
+    margin-right: 7rem;
+    margin-bottom: 4rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.show{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.botonProductos{
+    @include m.botonProducto;
+}
+
+
+

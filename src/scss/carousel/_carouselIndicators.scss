@@ -1,0 +1,26 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+.carousel-indicators {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 1.5rem;
+    z-index: 2;
+    background: transparent;
+}
+.carousel-indicator-item {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid v.$blanco;
+  background: transparent;
+  opacity: 0.5;
+  margin: 0.2em;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
+.active {
+  opacity: 1;
+  background-color: v.$blanco;
+}
